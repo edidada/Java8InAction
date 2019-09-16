@@ -1,6 +1,8 @@
 package lambdasinaction.chap1;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Predicate;
 
 public class FilteringApples{
@@ -96,6 +98,7 @@ public class FilteringApples{
             this.color = color;
         }
 
+        @Override
         public String toString() {
             return "Apple{" +
                    "color='" + color + '\'' +
