@@ -11,7 +11,8 @@ public class FilteringApples{
 
         List<Apple> inventory = Arrays.asList(new Apple(80,"green"),
                                               new Apple(155, "green"),
-                                              new Apple(120, "red"));	
+                                              new Apple(120, "red"));
+        System.out.println(inventory.getClass().getName());//java.util.Arrays$ArrayList
 
         // [Apple{color='green', weight=80}, Apple{color='green', weight=155}]
         List<Apple> greenApples = filterApples(inventory, FilteringApples::isGreenApple);
